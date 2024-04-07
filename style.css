@@ -1,0 +1,521 @@
+/* css reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sanserif;
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+
+body{
+    
+    font-family: 'roboto', sanserif;
+    background-color: rgb(15, 12, 12);
+}
+
+
+
+
+/* navigationbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#logo {
+    margin: 10px 34px;
+    color: white;
+    display: flex;
+}
+#logo img {
+    margin: 3px -29px;
+    height: 56px;
+    object-fit: contain;
+
+}
+
+#navbar ul {
+    display: flex;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(12, 11, 11);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+
+
+}
+
+
+#btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(24, 22, 22);
+    align-items: center;
+    padding: 6px 15px;
+    border: 2px solid rgb(193, 163, 98);
+    margin-right: 12px;
+    border-radius: 20px;
+    color: rgb(192, 163, 110);
+
+}
+
+#btn:hover{
+   background-color: rgb(44, 43, 43);
+}
+/*logo*/
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 20px;
+    color:rgb(252, 247, 247);
+    margin: 0px 39px 0px -33px;
+
+}
+
+li {
+    padding: 2px 8px;
+
+}
+
+#navbar ul li a {
+    color: rgb(158, 151, 151);
+    display: flex;
+    padding: 2px 0px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(247, 240, 240);
+    background-color: rgb(7, 5, 5);
+}
+
+#search {
+    display: flex;
+    font-size: 15px;   
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    cursor: text;
+    align-content: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    background: rgba(255, 254, 254, 0.185);
+    height: 34px;
+    width: 292px;
+    border-radius: 70px;
+    border: none;
+    position: absolute;
+    top: 22px;
+    right: 110px;
+}
+
+
+.separator {
+    display: block;
+    position:absolute;
+    bottom: 25px;
+    height: 3px;
+    background: rgb(226, 15, 152);   
+    border-radius: 4px;
+    left: 329px;
+    width: 48px;
+
+}
+
+
+
+.row__poster{
+    width: 100%; 
+    border-radius:15px;
+    object-fit: contain;
+    max-height: 200px;
+    margin-right: 10px;
+   
+    
+}
+/* language and channel */
+.row__poster1{
+    width: 100%; 
+    border-radius:15px;
+    object-fit: contain;
+    max-height: 150px;
+    margin-right: 10px;
+   
+}
+
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x:scroll ;
+    padding: 20px;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+    
+}
+.row__poster1:hover{
+    transform: scale(1.07);
+    
+}
+.row__posters::-webkit-scrollbar {
+     display:none ;
+}
+.row__posterlarge{
+    max-height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+    margin-top: 9px;
+
+
+}
+.row__posterlarge:hover{
+    transform: scale(1.09);
+
+}
+.row{
+    color: white;
+    margin-left: 10px;
+    margin-top: -3px;
+}
+/* for button deco */
+.buttons{
+    color: rgb(158, 151, 151);
+     display: block; 
+    padding: 2px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    
+}
+/* list of button */
+.down{
+    display: flex;
+    list-style: none;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+
+}
+.down::-webkit-scrollbar {
+    display: none;
+}
+.down button{
+     position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    border: 2px solid rgb(61, 57, 57);
+    margin-right: 12px;
+    border-radius: 20px;
+    margin-top: 2PX;   
+    color: rgb(250, 249, 247); 
+    height: 25px;
+    width: 99px;
+    background-color: rgb(78, 73, 73);
+    font-size: 14px;
+    
+}
+.down button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+/* foryou button */
+ .first{
+    margin-left: 37px;
+}
+/* mic  */
+.micro{
+    position:absolute;
+    top: 31px;
+    right: 125px;
+    color: white;
+}
+/* magnifier class */
+.mag{
+    position:absolute;
+    top: 31px;
+    right: 375px;
+    color: white;
+
+}
+/* For thin border line */
+hr{
+    border: none; 
+    border-top: 1px solid rgb(78, 78, 78);     
+    margin-bottom: 4px;
+    margin-top: -11px;
+}
+/* user logo */
+.circlebar{
+    position:absolute;
+    top: 20px;
+    right: 55px;
+    color: rgb(253, 253, 253);
+    font-size: 33px;
+    
+}
+
+/* For 1160px screen and until 790 px */
+
+ @media screen and (max-width: 1160px){
+    *{
+        font-family: 'roboto',sans-serif;
+        font-weight: 400px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+    #logo{
+        margin: 9px 36px;
+        color: rgb(231, 224, 224);
+        display: flex;
+        
+    }
+    #jio{
+        display: none;
+    }
+    
+
+    
+    #logo img{
+        margin: 3px -20px;
+        height: 40px;
+        object-fit: contain;
+        
+    
+    }
+    #btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        background-color:  rgb(24, 22, 22);
+        align-items: center;
+        padding: 2px 15px;
+        border: 2px solid rgb(193, 163, 98);
+        margin-right: 12px;
+        border-radius: 20px;
+        color: rgb(192, 163, 110);
+        width: 90px;
+        
+    
+    }
+    
+    .separator{
+        display: none;
+        
+    }
+    #search{
+        display: none;
+    }
+    .micro{
+        display: none;
+    }
+    .mag{
+        position:absolute;
+        top: 23px;
+        right: 70px;
+        color: white;
+        font-size: 20px;
+    
+    }
+    .circlebar{
+        position:absolute;
+        top: 20px;
+        right: 30px;
+        color: rgb(253, 253, 253);
+        font-size: 23px;
+        
+    }
+    
+    
+
+}
+
+
+/* For 790px screen and until 380 px */
+  @media screen and  (max-width:790px){ 
+      *{
+        font-family: 'roboto',sans-serif;
+        font-weight: 400px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+    #logo{
+        margin: 9px 36px;
+        color: rgb(231, 224, 224);
+        display: flex;
+        
+    }
+    #jio{
+        display: none;
+    }
+    
+
+    
+    #logo img{
+        margin: 3px -50px;
+        height: 40px;
+        object-fit: contain;
+        
+    
+    }
+    #btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        background-color:  rgb(24, 22, 22);
+        align-items: center;
+        padding: 2px 15px;
+        border: 2px solid rgb(193, 163, 98);
+        margin-right: 12px;
+        border-radius: 20px;
+        color: rgb(192, 163, 110);
+        width: 90px;
+        
+    
+    }
+     .item{
+        display: none;
+    } 
+    .separator{
+        display: none;
+        
+    }
+    #search{
+        display: none;
+    }
+    .micro{
+        display: none;
+    }
+    .mag{
+        position:absolute;
+        top: 23px;
+        right: 70px;
+        color: white;
+        font-size:20px ;
+    
+    }
+    .circlebar{
+        position:absolute;
+        top: 20px;
+        right: 30px;
+        color: rgb(253, 253, 253);
+        font-size: 23px;
+    
+    }
+
+
+
+ }
+
+ /* For 390px screen and below  */
+  @media screen and  (max-width:390px){ 
+    *{
+        font-family: 'roboto',sans-serif;
+        font-weight: 400px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+    #logo{
+        margin: 9px 36px;
+        color: rgb(231, 224, 224);
+        display: flex;
+        
+    }
+    #jio{
+        display: none;
+    }
+    
+
+    
+    #logo img{
+        margin: 3px -50px;
+        height: 40px;
+        object-fit: contain;
+        
+    
+    }
+    #btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        background-color:  rgb(24, 22, 22);
+        align-items: center;
+        padding: 2px 15px;
+        border: 2px solid rgb(193, 163, 98);
+        margin-right: 12px;
+        border-radius: 20px;
+        color: rgb(192, 163, 110);
+        width: 78px;
+        
+    
+    }
+     .item{
+        display: none;
+    } 
+    .separator{
+        display: none;
+        
+    }
+    #search{
+        display: none;
+    }
+    .micro{
+        display: none;
+    }
+    .mag{
+        position:absolute;
+        top: 23px;
+        right: 50px;
+        color: white;
+        font-size:15px ;
+    
+    }
+    .circlebar{
+        position:absolute;
+        top: 20px;
+        right: 17px;
+        color: rgb(253, 253, 253);
+        font-size: 20px;
+    
+    }
+
+
+
+ }
