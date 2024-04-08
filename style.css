@@ -209,6 +209,15 @@ li {
     font-size: 17px;
     
 }
+.buttons a{
+    text-decoration: none;
+    color: white;
+}
+.buttons a:hover{
+color: black;
+    background-color: white;
+    border: 2px solid white;}
+
 /* list of button */
 .down{
     display: flex;
